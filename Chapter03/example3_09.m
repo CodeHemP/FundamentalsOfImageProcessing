@@ -1,18 +1,13 @@
-% Example Matlab script as provided with textbook:
-%
-%  Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab
-%  Chris J. Solomon and Toby P. Breckon, Wiley-Blackwell, 2010
-%  ISBN: 0470844736, DOI:10.1002/9780470689776, http://www.fundipbook.com
-%
-I=imread('cameraman.tif'); % Read in image
+% Read in image
+A = imread('cameraman.tif');
 
-subplot(2,2,1), imshow(I); % Display image
+val=im2double(A);
+B = 4 * (((1+0.3).^(val)) - 1);
+C = 4 * (((1+0.4).^(val)) - 1);
+D = 4 * (((1+0.6).^(val)) - 1);
 
-Id=im2double(I);
-Output1=4*(((1+0.3).^(Id)) - 1);
-Output2=4*(((1+0.4).^(Id)) - 1);
-Output3=4*(((1+0.6).^(Id)) - 1);
-
-subplot(2,2,2), imshow(Output1); % Display result images
-subplot(2,2,3), imshow(Output2);
-subplot(2,2,4), imshow(Output3);
+% Display images
+subplot(2, 2, 1), imshow(A);
+subplot(2, 2, 2), imshow(B);
+subplot(2, 2, 3), imshow(C);
+subplot(2, 2, 4), imshow(D);
