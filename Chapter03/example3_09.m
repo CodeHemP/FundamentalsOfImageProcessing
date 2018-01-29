@@ -1,7 +1,7 @@
 % Read in image
 A = imread('cameraman.tif');
 
-val=im2double(A);
+val = im2double(A);
 B = 4 * (((1+0.3).^(val)) - 1);
 C = 4 * (((1+0.4).^(val)) - 1);
 D = 4 * (((1+0.6).^(val)) - 1);
