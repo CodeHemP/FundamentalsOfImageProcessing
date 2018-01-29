@@ -1,4 +1,4 @@
-% Read in image
+% Load image
 A = imread('eight.tif');
 
 % Add 3% (0.03) salt and pepper noise

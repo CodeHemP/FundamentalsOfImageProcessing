@@ -1,17 +1,16 @@
-% Example Matlab script as provided with textbook:
-%
-%  Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab
-%  Chris J. Solomon and Toby P. Breckon, Wiley-Blackwell, 2010
-%  ISBN: 0470844736, DOI:10.1002/9780470689776, http://www.fundipbook.com
-%
-H = imread('trui.png');
+A = imread('trui.png');
 
-I = ordfilt2(H,1,ones(5)); % Apply minimum filter
+% Apply minimum filter
+min_filt = ordfilt2(A, 1, ones(5));
 
-J = ordfilt2(H,25,ones(5)); % Apply maximum filter
+% Apply maximum filter
+max_filt = ordfilt2(A, 25, ones(5));
 
-K = imsubtract(J,I); % Subtract I(min) from J(max). 
+% Subtract min from max
+B = imsubtract(max_filt, min_filt); 
 
-subplot(1,4,1), imshow(H); subplot(1,4,2), imshow(I); % Display results
-
-subplot(1,4,3), imshow(J,[]); subplot(1,4,4), imshow(K,[]); % Display results
+% Display images
+subplot(1, 4, 1), imshow(A);
+subplot(1, 4, 2), imshow(min_filt);
+subplot(1, 4, 3), imshow(max_filt, []);
+subplot(1, 4, 4), imshow(B, []);
