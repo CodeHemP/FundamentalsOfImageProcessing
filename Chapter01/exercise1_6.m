@@ -1,5 +1,5 @@
 % Read in image
-A_A = imread('onion.png');     
+A_A = imread('images/onion.png');     
 
 A = rgb2hsv(A_A);
 

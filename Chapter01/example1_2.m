@@ -1,5 +1,5 @@
 % Read in the image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Display image using 'imshow'
 subplot(2, 2, 1);

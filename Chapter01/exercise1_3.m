@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cell.tif');
+A = imread('images/cell.tif');
 
 % Mess around with colormaps
 imagesc(A); colormap('jet');

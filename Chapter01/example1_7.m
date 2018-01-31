@@ -1,5 +1,5 @@
 % Read in image
-A = imread('onion.png');     
+A = imread('images/onion.png');     
 
 % Extract channels
 A_R = A(:, :, 1);        

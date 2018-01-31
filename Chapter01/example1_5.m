@@ -1,9 +1,9 @@
 % Read in image and examine grayscale image in interactive viewer
-A = imread('cell.tif');
+A = imread('images/cell.tif');
 imshow(A);
 
 % Read in image and examine RGB image in interactive viewer
-B = imread('onion.png');
+B = imread('images/onion.png');
 imshow(B);
 
 % Print pixel value, set pixel value to white and view changes

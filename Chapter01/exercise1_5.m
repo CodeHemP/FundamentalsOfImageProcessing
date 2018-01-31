@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cell.tif');
+A = imread('images/cell.tif');
 
 % Bit-plane slicing
 A1 = double(bitget(A, 1));

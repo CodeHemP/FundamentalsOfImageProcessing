@@ -1,11 +1,11 @@
 % Get information about the .tif image
-imfinfo('cameraman.tif')
+imfinfo('images/cameraman.tif')
 
 % Read in the image
-I1 = imread('cameraman.tif'); 
+A = imread('images/cameraman.tif'); 
 
 % Write the image to disk as a JPEG
-imwrite(I1,'cameraman.jpg','jpg');
+imwrite(A,'images/cameraman.jpg','jpg');
 
 % Get information about the .jpgimage
-imfinfo('cameraman.jpg')                           
+imfinfo('images/cameraman.jpg')                           

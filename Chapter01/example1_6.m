@@ -1,5 +1,5 @@
 % Read in image
-A = imread('onion.png');  
+A = imread('images/onion.png');  
 
 % Convert image to a grayscale
 A_G = rgb2gray(A);       

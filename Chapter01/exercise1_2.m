@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cell.tif');
+A = imread('images/cell.tif');
 
 % Plot 'before'
 subplot(2, 1, 1); imshow(A);
