@@ -1,5 +1,5 @@
 % Load image (in greyscale)
-A = rgb2gray(imread('peppers.png'));
+A = rgb2gray(imread('images/peppers.png'));
 
 % Create 10x10 Log filter
 k = fspecial('log', [11, 11], 3.0); 

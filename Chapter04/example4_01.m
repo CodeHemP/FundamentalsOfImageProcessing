@@ -1,5 +1,5 @@
 % Load image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Set filter to apply
 func = @(x) uint8(mean(x(:)));

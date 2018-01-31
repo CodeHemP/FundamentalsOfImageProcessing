@@ -1,5 +1,5 @@
 % Load image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Generate Gaussian kernel
 g = fspecial('gaussian', [5, 5], 1.5);

@@ -1,5 +1,5 @@
 % Load image
-A = imread('circuit.tif');
+A = imread('images/circuit.tif');
 
 % Edge Detection
 A1 = edge(A, 'roberts');

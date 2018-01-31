@@ -1,5 +1,5 @@
 % Load image
-A = double(imread('cameraman.tif'));
+A = double(imread('images/cameraman.tif'));
 
 % Generate 3x3 Laplacian filter
 h = fspecial('laplacian');

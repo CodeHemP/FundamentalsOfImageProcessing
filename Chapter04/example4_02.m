@@ -1,5 +1,5 @@
 % Load image
-A = imread('peppers.png');
+A = imread('images/peppers.png');
 
 % Create a 5x5 convolution kernel
 kernel = fspecial('motion', 50, 54);

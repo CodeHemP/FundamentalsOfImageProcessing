@@ -1,4 +1,4 @@
-A = imread('trui.png');
+A = imread('images/trui.png');
 
 % Apply minimum filter
 min_filt = ordfilt2(A, 1, ones(5));

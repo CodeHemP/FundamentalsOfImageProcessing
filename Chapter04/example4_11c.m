@@ -1,5 +1,5 @@
 % Load image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Generate 10x10 Log filter
 h = fspecial('log', [10, 10], 3.0);

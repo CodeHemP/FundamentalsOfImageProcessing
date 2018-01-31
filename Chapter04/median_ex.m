@@ -1,5 +1,5 @@
 % Load image
-A = imread('trui.png');
+A = imread('images/trui.png');
 
 % Add impulse noise
 J = imnoise(A, 'salt & pepper', 0.05);
