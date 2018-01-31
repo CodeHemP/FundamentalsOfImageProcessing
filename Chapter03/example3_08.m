@@ -1,6 +1,7 @@
 % Read in image
 A = imread('cameraman.tif');
 
+% Log transform
 val = im2double(A);
 B = 2 * log(1+val);
 C = 3 * log(1+val);

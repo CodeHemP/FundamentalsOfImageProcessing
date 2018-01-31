@@ -1,6 +1,7 @@
 % Read in image
 A = imread('cameraman.tif');
 
+% Exponential transform
 val = im2double(A);
 B = 4 * (((1+0.3).^(val)) - 1);
 C = 4 * (((1+0.4).^(val)) - 1);

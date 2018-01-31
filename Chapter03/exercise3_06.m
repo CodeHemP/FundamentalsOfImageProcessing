@@ -4,10 +4,8 @@ A = imread('coins.png');
 % Perform thresholding
 A_thresh = imbinarize(A, 0.5);
 A_adapt = imbinarize(A, 'adaptive');
-
-% TODO: FIX
 T_adapt2 = floor((max(A(:))-min(A(:))) / 2);
-A_adapt2 = imbinarize(A, T_adapt2);
+A_adapt2 = imbinarize(A, double(T_adapt2)/255);
 
 % Display images
 subplot(4, 1, 1), imshow(A); 
