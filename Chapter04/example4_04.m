@@ -1,22 +1,16 @@
 % Load image
 A = imread('images/eight.tif');
 
-% Add 5% (0.05) salt and pepper noise
-A_salt = imnoise(A, 'salt & pepper', 0.05);
-
-% Add Gaussian noise (with 0.05 variance)
-A_gaus = imnoise(A, 'gaussian', 0.05);
+% Add noise
+A_salt = imnoise(A, 'salt & pepper', 0.1);
+A_gaus = imnoise(A, 'gaussian', 0.1);
 
 % Define mean filter
-k = ones(3, 3) / 9;
+k = ones(5, 5) / 25;
 
-% Apply to original image
+% Apply mean filter to images
 A_mean = imfilter(A, k);
-
-% Apply to salt and pepper image
 A_salt_mean = imfilter(A_salt, k);
-
-% Apply tp gaussian image
 A_gaus_mean = imfilter(A_gaus ,k);
 
 % Display images 
