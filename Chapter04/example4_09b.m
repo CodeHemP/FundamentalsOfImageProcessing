@@ -1,13 +1,13 @@
 % Load image (in greyscale)
 A = rgb2gray(imread('peppers.png'));
 
-% Create Laplacian filter
-k = fspecial('laplacian'); 
+% Create Log filter
+k = fspecial('log'); 
 
 % Laplacian edges 
 A1 = imfilter(double(A), k, 'symmetric');
 
 % Display images
-subplot(1, 2, 1), imagesc(A);
-subplot(1, 2, 2), imagesc(A1);
+subplot(1, 2, 1), imagesc(A); axis image; axis off;
+subplot(1, 2, 2), imagesc(A1); axis image; axis off;
 colormap('gray');

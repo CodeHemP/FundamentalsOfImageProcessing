@@ -1,11 +1,11 @@
 % Load image
 A = imread('eight.tif');
 
-% Add 3% (0.03) salt and pepper noise
-A_salt = imnoise(A, 'salt & pepper', 0.03);
+% Add 5% (0.05) salt and pepper noise
+A_salt = imnoise(A, 'salt & pepper', 0.05);
 
-% Add Gaussian noise (with 0.02 variance)
-A_gauss = imnoise(A, 'gaussian', 0.02);
+% Add Gaussian noise (with 0.05 variance)
+A_gauss = imnoise(A, 'gaussian', 0.05);
 
 % Plot images
 subplot(1, 3, 1), imshow(A);

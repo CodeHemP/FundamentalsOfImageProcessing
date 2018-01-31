@@ -2,7 +2,7 @@
 A = imread('cameraman.tif');
 
 % Set filter to apply
-func = @(x) max(x(:));
+func = @(x) uint8(mean(x(:)));
 
 % Apply over 3 x 3 neighbourhood
 B = nlfilter(A, [3, 3], func);
