@@ -1,5 +1,5 @@
 % Read in image
-A = imread('coins.png');
+A = imread('images/coins.png');
 
 % Display image
 subplot(1, 2, 1), imshow(A);

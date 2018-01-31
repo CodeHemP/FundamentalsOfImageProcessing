@@ -1,5 +1,5 @@
 % Read in image
-A = imread('AT3_1m4_10.tif');
+A = imread('images/AT3_1m4_10.tif');
 
 % Log transform
 val = im2double(A);

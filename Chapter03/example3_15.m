@@ -1,5 +1,5 @@
 % Read in image
-A = imread('rice.png');
+A = imread('images/rice.png');
 
 % Create mean image
 M = imfilter(A, fspecial('average', [15, 15]), 'replicate');

@@ -1,6 +1,6 @@
 % Read in images
-A = imread('cola1.png'); 
-B = imread('cola2.png'); 
+A = imread('images/cola1.png'); 
+B = imread('images/cola2.png'); 
 
 % Subtract images
 C = imsubtract(A, B);

@@ -1,5 +1,5 @@
 % Read in image
-A = imread('pout.tif');
+A = imread('images/pout.tif');
 
 % Stretch contrast using method 1
 B = imadjust(A, stretchlim(A, [0.05, 0.95]), []);

@@ -1,5 +1,5 @@
 % Read in image
-A = imread('coins.png');
+A = imread('images/coins.png');
 
 % Perform thresholding
 A_thresh = imbinarize(A, 0.5);

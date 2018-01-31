@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cola1.png'); 
+A = imread('images/cola1.png'); 
 
 % Multiply image by 1.5
 B = immultiply(A, 1.5);

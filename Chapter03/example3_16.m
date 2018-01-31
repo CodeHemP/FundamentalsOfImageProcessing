@@ -1,5 +1,5 @@
 % Read in image
-A = imread('rice.png');
+A = imread('images/rice.png');
 
 % Create median image
 M = medfilt2(A, [15, 15]);

@@ -1,6 +1,6 @@
 % Read in images
-A = imread('cameraman.tif');
-B = imread('circles.png');
+A = imread('images/cameraman.tif');
+B = imread('images/circles.png');
 
 % Convert to 'uint8'
 A = uint8(A);

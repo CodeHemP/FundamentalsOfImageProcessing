@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cameraman.tif'); 
+A = imread('images/cameraman.tif'); 
 
 % Power-law (gamma) transform
 val = im2double(A);

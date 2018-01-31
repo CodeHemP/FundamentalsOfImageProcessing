@@ -1,8 +1,8 @@
 % Read in images
-A = imread('peppers.png');
-B = imread('mri.tif');
-C = imread('spine.tif');
-D = imread('AT3_1m4_01.tif');
+A = imread('images/peppers.png');
+B = imread('images/mri.tif');
+C = imread('images/spine.tif');
+D = imread('images/AT3_1m4_01.tif');
 
 % Invert and plot images
 subplot(4, 2, 1), imshow(A);

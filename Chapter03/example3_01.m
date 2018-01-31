@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cameraman.tif'); 
+A = imread('images/cameraman.tif'); 
 
 % Add 100 pixel values to image A
 B = imadd(A, 100); 

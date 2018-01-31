@@ -1,5 +1,5 @@
 % Read in image
-A = imread('westconcordaerial.png');
+A = imread('images/westconcordaerial.png');
 % A = imread('peppers.png');
 
 % Contrast streching

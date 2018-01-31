@@ -1,5 +1,5 @@
 % Read in image
-A = imread('pout.tif');
+A = imread('images/pout.tif');
 
 % Define ramp-like pdf as desired output histogram
 distribution = 0:255;

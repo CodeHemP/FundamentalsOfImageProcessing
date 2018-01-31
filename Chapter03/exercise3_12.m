@@ -1,5 +1,5 @@
 % Read in image
-A = imread('autumn.tif');
+A = imread('images/autumn.tif');
 
 % Extract channels
 R = A(:, :, 1);        

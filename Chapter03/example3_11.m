@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Map input grey values of image A in range 0-1 to an output range of 0-1
 % with gamma factor of 1/3 (i.e. r = 3)

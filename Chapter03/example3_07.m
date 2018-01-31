@@ -1,5 +1,5 @@
 % Read in image
-A = imread('trees.tif');
+A = imread('images/trees.tif');
 
 % Perform thresholding
 T = imbinarize(A, 0.1);

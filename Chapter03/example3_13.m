@@ -1,5 +1,5 @@
 % Read in image
-A = imread('coins.png');
+A = imread('images/coins.png');
 
 % Get histogram bin values
 [counts, bins] = imhist(A); 

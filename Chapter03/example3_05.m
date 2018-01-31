@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cameraman.tif'); 
+A = imread('images/cameraman.tif'); 
 
 % Invert the image
 B = imcomplement(A);

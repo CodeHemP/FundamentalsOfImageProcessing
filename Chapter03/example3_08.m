@@ -1,5 +1,5 @@
 % Read in image
-A = imread('cameraman.tif');
+A = imread('images/cameraman.tif');
 
 % Log transform
 val = im2double(A);

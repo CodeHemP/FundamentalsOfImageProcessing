@@ -1,5 +1,5 @@
 % Used to blend images using specific weights
-function output = exercise3_4(A, wA, B, wB)
+function output = exercise3_04(A, wA, B, wB)
 % Check if the weights equal 1
 if (wA + wB) ~= 1.0
     error('Both weight values must equal 1');

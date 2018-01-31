@@ -1,6 +1,6 @@
 % Read in images
-A = imread('rice.png');
-B = imread('cameraman.tif');
+A = imread('images/rice.png');
+B = imread('images/cameraman.tif');
 
 % Check image sizes
 if size(A) ~= size(B)

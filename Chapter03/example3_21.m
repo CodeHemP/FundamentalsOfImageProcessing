@@ -1,5 +1,5 @@
 % Read in image
-A = imread('pout.tif');
+A = imread('images/pout.tif');
 
 A1 = adapthisteq(A, 'clipLimit', 0.02, 'Distribution', 'rayleigh');
 A2 = adapthisteq(A, 'clipLimit', 0.02, 'Distribution', 'exponential');

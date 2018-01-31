@@ -1,10 +1,10 @@
 % Read in images
-A = imread('toycars1.png');
-B = imread('toycars2.png');
+A = imread('images/toycars1.png');
+B = imread('images/toycars2.png');
 
 % Convert to binary
-A_binary = im2bw(A);           
-B_binary = im2bw(B);
+A_binary = imbinarize(A);           
+B_binary = imbinarize(B);
 
 % XOR images
 C_binary = xor(A_binary, B_binary);

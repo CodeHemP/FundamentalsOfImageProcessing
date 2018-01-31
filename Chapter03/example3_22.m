@@ -1,5 +1,5 @@
 % Read in image
-A = imread('autumn.tif');
+A = imread('images/autumn.tif');
 
 % Convert original to HSV image
 A_HSV = rgb2hsv(A);

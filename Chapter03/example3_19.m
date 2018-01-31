@@ -1,5 +1,5 @@
 % Read in image
-A = imread('pout.tif'); 
+A = imread('images/pout.tif'); 
 B = histeq(A);
 
 % Display images and histograms

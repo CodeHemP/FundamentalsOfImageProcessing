@@ -2,7 +2,7 @@
 tic
 
 % Read in image
-A = imread('mandi.tif');
+A = imread('images/mandi.tif');
 
 % Methods to make the circle visible
 val = im2double(A);
