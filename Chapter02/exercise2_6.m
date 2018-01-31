@@ -1,5 +1,5 @@
 % Read in HDR image
-A_HDR = hdrread('office.hdr');
+A_HDR = hdrread('images/office.hdr');
 
 % Show image
 imtool(tonemap(A_HDR));

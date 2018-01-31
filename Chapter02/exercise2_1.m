@@ -1,5 +1,5 @@
 % Read in image, get image dimensions and create zero image of equal size
-A = imread('cameraman.tif'); 
+A = imread('images/cameraman.tif'); 
 [rows, cols] = size(A);
 A_Z = zeros(size(A));
 

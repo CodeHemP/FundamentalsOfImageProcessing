@@ -1,5 +1,5 @@
 % Read in image
-A = imread('peppers.png');
+A = imread('images/peppers.png');
 
 % Convert RGB image to indexed image
 [A_ind, A_map] = rgb2ind(A, 128);

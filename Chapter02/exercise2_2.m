@@ -1,5 +1,5 @@
 % Read in image
-A = imread('football.jpg');
+A = imread('images/football.jpg');
 
 % Resize image
 B = imresize(A, 2);

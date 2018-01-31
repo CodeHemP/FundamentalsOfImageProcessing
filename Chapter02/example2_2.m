@@ -1,5 +1,5 @@
 % Read in image
-A = imread('trui.png');
+A = imread('images/trui.png');
 
 % Define Gaussian convolution kernel
 PSF = fspecial('gaussian', [5, 5], 2);

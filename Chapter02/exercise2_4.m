@@ -1,5 +1,5 @@
 % Read in image
-A = imread('eight.tif');
+A = imread('images/eight.tif');
 
 % Add 3% (0.03) salt and pepper noise
 A_salt = imnoise(A, 'salt & pepper', 0.03);
