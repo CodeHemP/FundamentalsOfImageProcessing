@@ -1,6 +1,6 @@
 % Read in image
-A = imread('images/cameraman.tif');
-% A = imread('images/BBC_grey_testcard.png');
+%A = imread('images/cameraman.tif');
+A = imread('images/BBC_grey_testcard.png');
 
 % Get FT and centered version
 FT = fft2(A);
@@ -27,8 +27,7 @@ sigma = 32;
 % Construct freq domain filter
 arg = (X.^2 + Y.^2)./sigma.^2;
 freq_filt = exp(-arg);
-disp(size(freq_filt))
-disp(size(FT))
+
 % Centred filter on non-centred spectrum
 imfilt1 = abs(ifft2(freq_filt.*FT)); 
 
